@@ -56,6 +56,20 @@ Parameters:
 | Xerces-1.2              | 440          | 850          | 71               | 16.1             | 
 | Xerces-1.3              | 453          | 777          | 69               | 15.2             | 
 
+## Baseline Methods and Their Parameters
+
+Graph convolutional network (GCN) is a classical semi-supervised model that first introduced convolutional neural networks to handle the graph data, which uses 64 as hidden-layer size, 0.8 as dropout probability, and 0.001 as learning rate decay to initialize.
+
+Graph attention network (GAT) designs an attention layer to the graph convolutional network, making the network more sensitive to important information instead of all graph structures, which uses 64 as hidden-layer size, 0.6 as dropout probability, 0.3 as attention dropout probability, and 0.01 as learning rate decay for training.
+
+Approximate personalized propagation of neural predictions (APPNP) employs an approximation strategy to improve GCN by incorporating the topic-sensitive PageRank. Similar to GAT, we use 64 as hidden-layer size, 0.5 as dropout probability, and 0.01 as learning rate decay.
+
+GraphSAGE (SAGE) is an inductive architecture that leverages vector embeddings of nodes by sampling and aggregating feature information from local neighbors. In this study, we use 128 as hidden-layer size, 5 as the sample number, and 0.005 as learning rate decay.
+
+GCNII is a variant of the GCN model using initial residual and identity mapping to relieve the over-smoothing problem. As suggested by Yang et al., we use 64 as the hidden-layer size, 0.6 as the dropout probability, and 0.005 as the learning rate decay.
+
+Mixture model networks (MoNet) applies learnable parameter kernels for extending the traditional convolutional neural networks to non-Euclidean (e.g. graph data) domains, which uses 8 as hidden-layer size, 0.6 as dropout probability, and 0.01 as learning rate decay to parameterize.
+
 ## Other Relevant Papers
  
  * [Label propagation based semi-supervised learning for software defect prediction](https://link.springer.com/article/10.1007/s10515-016-0194-x) by Zhang, Zhi-Wu and Jing, Xiao-Yuan and Wang, Tie-Jian
