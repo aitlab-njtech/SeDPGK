@@ -56,7 +56,7 @@ Parameters:
 | Xerces-1.2              | 440          | 850          | 71               | 16.1             | 
 | Xerces-1.3              | 453          | 777          | 69               | 15.2             | 
 
-## Baseline Methods and Their Parameters
+## 6 Selected GNN Methods and Their Parameters
 
 Graph convolutional network (GCN) is a classical semi-supervised model that first introduced convolutional neural networks to handle the graph data, which uses 64 as hidden-layer size, 0.8 as dropout probability, and 0.001 as learning rate decay to initialize.
 
